@@ -1,3 +1,5 @@
+from Pieces import *
+
 class Chess:
     def __init__(self, EPD= 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq -'):
         self.x = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
@@ -68,6 +70,50 @@ class Chess:
         result += '  ----------------\n  a b c d e f g h\n'
         print(result)
 
+    def board_to_array(self, pos):
+        return ''
+        
+    def EPD_hash(self):
+        return ''
+    
+    def log_move(self, part, cur_cord, next_cord, cur_pos, new_pos):
+        return ''
+    
+    def move(self, cur_pos, new_pos):
+        return ''
+    
+    def valid_move(self, cur_pos, new_pos):
+        return ''
+    
+    def possible_moves(self, capture=True):
+        return ''
+    
+    def is_checkmate(self, moves):
+        return ''
+    
+    def pawn_promotion(self, cur_pos, new_pos):
+        return ''
+    
+    def fifty_move_rule(self, moves):
+        return ''
+    
+    def threefold_repetition(self, hash):
+        return ''
+    
+    def insufficient_material(self):
+        return ''
+    
+    def stalemate(self):
+        return ''
+    
+    def draw(self):
+        return ''
+    
+    def end(self):
+        return ''
+    
+    def check_state(self, hash):
+        return ''
     
 
 if __name__ == '__main__':
